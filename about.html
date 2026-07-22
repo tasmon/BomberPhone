@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BomberPhone — About</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="device">
+  <div id="speaker"></div>
+  <div id="screenWrap">
+    <div class="phone-screen">
+      <div class="status-bar">ABOUT</div>
+      <div class="content" id="content">
+        <h1>BomberPhone</h1>
+        <p>Version 1.0</p>
+        <p>A classic-style Bomberman game built for Cloud Phone — running on standard Web APIs, no special SDK required.</p>
+
+        <h2>Built with</h2>
+        <ul>
+          <li>HTML5 Canvas for rendering</li>
+          <li>Plain CSS &amp; JavaScript — no frameworks</li>
+          <li>Keyboard-first design for feature-phone navigation</li>
+        </ul>
+
+        <h2>Design</h2>
+        <p>Controls follow the T9 dpad convention (2/8/4/6 to move, 5 to fire, 0 to pause) with LSK/RSK softkey navigation, matching Cloud Phone's keyboard-driven UI.</p>
+
+        <h2>Screen</h2>
+        <p>Designed and tested for the smallest Cloud Phone resolution: 240×320.</p>
+
+        <p class="foot">A Cloud Phone demo project</p>
+      </div>
+      <div class="softkey-bar">
+        <span id="lskLabel"> </span>
+        <span id="rskLabel">Back</span>
+      </div>
+    </div>
+  </div>
+  <div id="softkeys">
+    <div class="sk" id="lskBtn">Back</div>
+    <div class="sk" id="rskBtn">Back</div>
+  </div>
+  <div id="dpadArea">
+    <div id="keypad">
+      <div class="key" data-k="1">1</div>
+      <div class="key hot" data-k="2">2<span class="sub">▲</span></div>
+      <div class="key" data-k="3">3</div>
+      <div class="key" data-k="4">4</div>
+      <div class="key" data-k="5">5</div>
+      <div class="key" data-k="6">6</div>
+      <div class="key" data-k="7">7</div>
+      <div class="key hot" data-k="8">8<span class="sub">▼</span></div>
+      <div class="key" data-k="9">9</div>
+      <div class="key" data-k="0">0</div>
+      <div class="key" data-k="star">*</div>
+      <div class="key" data-k="hash">#</div>
+    </div>
+  </div>
+</div>
+<script src="keypad.js"></script>
+<script src="about.js"></script>
+</body>
+</html>
