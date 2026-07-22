@@ -1,6 +1,6 @@
 # BomberPhone for CloudPhone
 
-A classic Bomberman-style arcade game built for [Cloud Phone](https://cloudphone.dev) — the remote-browser platform that brings web apps to feature phones. No special SDK, no touchscreen, just standard Web APIs running at 240×320.
+A classic Bomberman-style arcade game built for [Cloud Phone](https://cloudphone.dev) — the remote-browser platform that brings web apps to feature phones.
 
 Blast through crates, dodge enemies, grab power-ups, and clear the grid to advance through progressively harder levels.
 
@@ -17,4 +17,12 @@ Blast through crates, dodge enemies, grab power-ups, and clear the grid to advan
 | **Menu** (LSK) | Open pause menu |
 | **Back** (RSK) | Close menu / go back |
 
-Arrow keys work as aliases for `2/8/4/6`, and `Enter`/`Space` alias `5`, for testing on a regular keyboard.
+Arrow keys work as aliases for `2/8/4/6`, and `Enter`/`Space` alias `5`.
+
+## Add to CloudPhone
+1. Go to [CloudPhone Developer Page](https://www.cloudfone.com/my).  
+2. Select **Add Widget**.  
+3. Paste this Start URL:  
+   `https://tasmon.github.io/BomberPhone/`  
+4. Upload icons if required.  
+5. Save and refresh — **BomberPhone** will appear on your CloudPhone.
