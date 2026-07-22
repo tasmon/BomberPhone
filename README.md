@@ -43,19 +43,12 @@ bomberphone/
 └── about.js      # about page scroll/navigation
 ```
 
-## Running it
-
-No build tools required. Everything is static.
-
 **Locally:**
 ```bash
 cd bomberphone
 python3 -m http.server 8000
 ```
 Then open `http://localhost:8000` in a browser.
-
-**On Cloud Phone:**
-Deploy the `bomberphone/` folder to any static host (GitHub Pages, Netlify, S3, etc.) and register the URL as a Cloud Phone widget. Everything is relative, so no path changes are needed.
 
 ## How to play
 
@@ -68,7 +61,3 @@ Deploy the `bomberphone/` folder to any static host (GitHub Pages, Netlify, S3, 
   - **♥** — extra life
 - Defeat every enemy on the level to advance. Enemies get faster and more numerous each level.
 - You have 3 lives. Game over when they run out — your score and level reached are shown.
-
-## License
-
-MIT — do whatever you like with it.
