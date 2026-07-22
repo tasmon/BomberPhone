@@ -2,69 +2,49 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>BomberPhone — Help</title>
+<link rel="icon" type="image/png" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="device">
-  <div id="speaker"></div>
-  <div id="screenWrap">
-    <div class="phone-screen">
-      <div class="status-bar">HELP</div>
-      <div class="content" id="content">
-        <h1>How to Play</h1>
-        <p>Blast your way through crates, dodge enemies, and clear every enemy on the grid to reach the next level. Levels get tougher as you go.</p>
+<div id="screenWrap">
+  <div class="phone-screen">
+    <div class="status-bar">HELP</div>
+    <div class="content" id="content">
+      <h1>How to Play</h1>
+      <p>Blast your way through crates, dodge enemies, and clear every enemy on the grid to reach the next level. Levels get tougher as you go.</p>
 
-        <h2>Controls</h2>
-        <div class="key-row"><b>2</b><span>Move up</span></div>
-        <div class="key-row"><b>8</b><span>Move down</span></div>
-        <div class="key-row"><b>4</b><span>Move left</span></div>
-        <div class="key-row"><b>6</b><span>Move right</span></div>
-        <div class="key-row"><b>5</b><span>Place bomb / Fire</span></div>
-        <div class="key-row"><b>0</b><span>Pause game</span></div>
-        <div class="key-row"><b>Menu (LSK)</b><span>Open pause menu</span></div>
-        <div class="key-row"><b>Back (RSK)</b><span>Close menu / go back</span></div>
+      <h2>Controls</h2>
+      <div class="key-row"><b>2</b><span>Move up</span></div>
+      <div class="key-row"><b>8</b><span>Move down</span></div>
+      <div class="key-row"><b>4</b><span>Move left</span></div>
+      <div class="key-row"><b>6</b><span>Move right</span></div>
+      <div class="key-row"><b>5</b><span>Place bomb / Fire</span></div>
+      <div class="key-row"><b>0</b><span>Pause game</span></div>
+      <div class="key-row"><b>Menu (LSK)</b><span>Open pause menu</span></div>
+      <div class="key-row"><b>Back (RSK)</b><span>Close menu / go back</span></div>
 
-        <h2>Tips</h2>
-        <ul>
-          <li>Destroy brown crates for points — some drop power-ups.</li>
-          <li><b>B</b> = +1 bomb you can place at once.</li>
-          <li><b>F</b> = bigger blast radius.</li>
-          <li>Heart = extra life.</li>
-          <li>Bombs explode after a couple of seconds — don't get caught in your own blast.</li>
-          <li>Bombs chain-react: one blast can set off another nearby.</li>
-          <li>You can't walk through your own bomb once you've stepped fully off its tile.</li>
-        </ul>
+      <h2>Tips</h2>
+      <ul>
+        <li>Destroy brown crates for points — some drop power-ups.</li>
+        <li><b>B</b> = +1 bomb you can place at once.</li>
+        <li><b>F</b> = bigger blast radius.</li>
+        <li>Heart = extra life.</li>
+        <li>Bombs explode after a couple of seconds — don't get caught in your own blast.</li>
+        <li>Bombs chain-react: one blast can set off another nearby.</li>
+        <li>You can't walk through your own bomb once you've stepped fully off its tile.</li>
+      </ul>
 
-        <p class="foot">Use 2 / 8 to scroll this page</p>
-      </div>
-      <div class="softkey-bar">
-        <span id="lskLabel"> </span>
-        <span id="rskLabel">Back</span>
-      </div>
+      <p class="foot">Use 2 / 8 to scroll this page</p>
     </div>
-  </div>
-  <div id="softkeys">
-    <div class="sk" id="lskBtn">Back</div>
-    <div class="sk" id="rskBtn">Back</div>
-  </div>
-  <div id="dpadArea">
-    <div id="keypad">
-      <div class="key" data-k="1">1</div>
-      <div class="key hot" data-k="2">2<span class="sub">▲</span></div>
-      <div class="key" data-k="3">3</div>
-      <div class="key" data-k="4">4</div>
-      <div class="key" data-k="5">5</div>
-      <div class="key" data-k="6">6</div>
-      <div class="key" data-k="7">7</div>
-      <div class="key hot" data-k="8">8<span class="sub">▼</span></div>
-      <div class="key" data-k="9">9</div>
-      <div class="key" data-k="0">0</div>
-      <div class="key" data-k="star">*</div>
-      <div class="key" data-k="hash">#</div>
+    <div class="softkey-bar">
+      <span> </span>
+      <span>Back</span>
     </div>
   </div>
 </div>
+<script src="fit.js"></script>
 <script src="keypad.js"></script>
 <script src="help.js"></script>
 </body>

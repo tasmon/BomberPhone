@@ -2,36 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>BomberPhone</title>
+<link rel="icon" type="image/png" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="device">
-  <div id="speaker"></div>
-  <div id="screenWrap">
-    <canvas id="screen" width="240" height="320"></canvas>
-  </div>
-  <div id="softkeys">
-    <div class="sk" id="lskBtn">Menu</div>
-    <div class="sk" id="rskBtn">Back</div>
-  </div>
-  <div id="dpadArea">
-    <div id="keypad">
-      <div class="key" data-k="1">1</div>
-      <div class="key hot" data-k="2">2<span class="sub">▲</span></div>
-      <div class="key" data-k="3">3</div>
-      <div class="key hot" data-k="4">4<span class="sub">◀</span></div>
-      <div class="key hot" data-k="5">5<span class="sub">FIRE</span></div>
-      <div class="key hot" data-k="6">6<span class="sub">▶</span></div>
-      <div class="key" data-k="7">7</div>
-      <div class="key hot" data-k="8">8<span class="sub">▼</span></div>
-      <div class="key" data-k="9">9</div>
-      <div class="key hot" data-k="0">0<span class="sub">PAUSE</span></div>
-      <div class="key" data-k="star">*</div>
-      <div class="key" data-k="hash">#</div>
-    </div>
-  </div>
+<div id="screenWrap">
+  <canvas id="screen" width="240" height="320"></canvas>
 </div>
+<script src="fit.js"></script>
 <script src="keypad.js"></script>
 <script src="game.js"></script>
 </body>

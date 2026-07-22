@@ -1,42 +1,38 @@
-/* BomberPhone — shared Cloud Phone device chrome */
-* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; user-select: none; }
+/* BomberPhone — full-screen 240x320 layout, scaled to fit the viewport */
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; user-select: none; }
 html, body {
-  margin: 0; padding: 0; height: 100%;
-  background: #1b1d1f;
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Courier New', monospace;
-  touch-action: none;
+  width: 100%; height: 100%;
+  background: #000;
   overflow: hidden;
+  touch-action: none;
+  font-family: 'Courier New', monospace;
 }
-#device {
-  background: linear-gradient(160deg, #4a4f52, #26282a);
-  border-radius: 22px;
-  padding: 14px 12px 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.08);
-  width: 268px;
-}
-#speaker {
-  width: 46px; height: 5px; border-radius: 3px; background: #111;
-  margin: 0 auto 10px; box-shadow: inset 0 1px 2px #000;
-}
+
+/* Fixed 240x320 logical screen, scaled up/down by fit.js to fill the
+   viewport while preserving the exact pixel layout the game was designed
+   at (crisp, letterboxed, never distorted). */
 #screenWrap {
-  background: #0a0a0a;
-  border-radius: 6px;
-  padding: 6px;
-  box-shadow: inset 0 0 0 2px #333, inset 0 0 8px rgba(0,0,0,.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 240px;
   height: 320px;
+  transform-origin: center center;
+  transform: translate(-50%, -50%);
 }
-canvas, .phone-screen {
-  display: block;
-  width: 240px; height: 320px;
+
+canvas {
+  width: 240px;
+  height: 320px;
   image-rendering: pixelated;
   background: #cfe0b8;
-  border-radius: 2px;
+  display: block;
 }
 
 /* HTML-based screen (used by help/about pages) */
 .phone-screen {
+  width: 240px;
+  height: 320px;
   display: flex;
   flex-direction: column;
   background: #cfe0b8;
@@ -100,36 +96,3 @@ canvas, .phone-screen {
   font-size: 10px;
   color: #cfe0b8;
 }
-
-#softkeys {
-  display: flex; justify-content: space-between;
-  margin-top: 10px; padding: 0 4px;
-}
-.sk {
-  background: #34383a; color: #cfd6d2; font-size: 10px; letter-spacing: .5px;
-  padding: 7px 10px; border-radius: 6px; border: 1px solid #454a4c;
-  cursor: pointer; min-width: 54px; text-align: center;
-  box-shadow: 0 2px 0 #1c1e1f;
-}
-.sk:active { transform: translateY(1px); box-shadow: none; }
-
-#dpadArea { display: flex; justify-content: center; margin-top: 14px; }
-#keypad {
-  display: grid;
-  grid-template-columns: repeat(3, 50px);
-  grid-template-rows: repeat(4, 34px);
-  gap: 6px;
-}
-.key {
-  background: linear-gradient(160deg, #55595b, #3a3d3f);
-  border-radius: 8px;
-  border: 1px solid #2a2c2d;
-  color: #e6e9e7;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  font-size: 13px; font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 2px 0 #1c1e1f;
-}
-.key:active, .key.active { transform: translateY(1px); box-shadow: none; background: #6a6f71; }
-.key .sub { font-size: 7px; font-weight: normal; color: #a8afa9; margin-top: 1px; letter-spacing: .5px; }
-.key.hot { color: #ffd479; }
