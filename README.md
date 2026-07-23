@@ -4,6 +4,8 @@ A classic Bomberman-style arcade game built for [Cloud Phone](https://cloudphone
 
 Blast through crates, dodge enemies, grab power-ups, and clear the grid to advance through progressively harder levels.
 
+<img width="220" height="509" alt="image" src="https://github.com/user-attachments/assets/edcfffe5-ee41-4fe1-9303-18055a7186da" />
+
 ## Controls
 
 | Key | Action |
